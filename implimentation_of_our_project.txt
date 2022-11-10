@@ -1,0 +1,61 @@
+CREATE external table if not exists orders_Clg(order_id int, order_date string, customer_id int, status string)
+row format delimited fields terminated by , stored as textfile location /user/cloudera/airflow_output/
+
+select order_id,order_date ,count(*) from orders_Clg
+group by order_id,order_date having count(*) > 1;
+
+
+CREATE external table if not exists orders_Clg(
+order_id int, order_date timestamp, customer_id int, status string)
+row format delimited
+fields terminated by ','
+stored as textfile
+location '/user/cloudera/raj/'
+
+CREATE table if not exists orders_Clg_Bucketed(
+order_id int,
+order_date timestamp,
+customer_id int,
+status string)
+CLUSTERED BY (order_id) into 8 buckets;
+
+insert into table orders_Clg_Bucketed select * from orders_Clg;
+
+ 
+
+
+
+
+
+create external table if not exists member_details
+(
+card_id bigint,
+member_id bigint,
+member_joining_dt timestamp,
+card_purchase_dt timestamp,
+country string,
+city string,
+score float
+)
+row format delimited fields terminated by ','
+stored as textfile
+location '/project_input_data/member_details/';
+
+create table if not exists member_details_bucketed(
+card_id bigint,
+member_id bigint,
+member_joining_dt timestamp,
+card_purchase_dt timestamp,
+country string,
+city string,
+score float)
+CLUSTERED BY (card_id) into 8 buckets;
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,538 @@
+Big Data To Avoid Weather Related Flight Delays
+
+
+INTRODUCTION:->
+==============
+
+This paper identifies key aviation data sets for operational analytics,
+presents a methodology for application of big-data analysis methods to operational problems, 
+and offers examples of analytical solutions using an integrated aviation data warehouse.
+Big-data analysis methods have revolutionized how both government and commercial researchers 
+can analyze massive aviation databases that were previously too cumbersome, inconsistent
+or irregular to drive high-quality output. Traditional data-mining methods
+are effective on uniform data sets such as flight tracking data or weather.
+Integrating heterogeneous data sets introduces complexity in data standardization, normalization,
+and scalability. The variability of underlying data warehouse can be leveraged using virtualized cloud 
+infrastructure for scalability to identify trends and create actionable information. The applications
+for big-data analysis in airspace system performance and safety optimization have high potential because 
+of the availability and diversity of airspace related data. Analytical applications to quantitatively review airspace
+performance, operational efficiency and aviation safety require a broad data set.Individual information
+sets such as radar tracking data or weather reports provide slices of relevant data, but do not provide the required context,
+perspective and detail on their own to create actionable knowledge. These data sets are published by diverse sources 
+and do not have the standardization,uniformity or defect controls required for simple integration and analysis.
+At a minimum, aviation big-data research requires the fusion of airline, aircraft, flight, radar, crew, and weather 
+data in a uniform taxonomy, organized so that queries can be automated by flight, by fleet, or across the airspace
+system.
+
+
+
+Currently, travelling through air is considered as one of the
+majorly utilized transportation media. This booming trend is
+due to advancements in the tourism industry. Due to these
+growth patterns, there have been rising needs for developing
+the capacity of the airports. The demands are constantly
+increasing on the higher verge and it indirectly leads to
+congestion at the airports and delays in flights. These delay
+problems eventually result in forming an imbalance in consumers demands and capacity of the airport.
+Flight delay is acknowledged as one of the striking indicators of performance in the aviation business. It generates
+problems for both air commuters and the aviation industry
+in the form of time and money. It also lowers the esteem
+and creates a huge loss on the business of airlines as well as
+airport authorities. Delay in flights also endanger the marketing
+and business strategies as aviation industries are majorly
+dependent on the trustworthiness of its customer. Certain delay
+performance not only influences customers choice towards preferring airlines but also causes drastic harm to the ecosystem.
+Utilization of fuels and eruption of harmful pollutants are also
+some of the environment harming agents which are caused
+due to delays. Therefore, it becomes essential to plan and
+minimize the delay causing by making use of newly accessible
+technologies.
+In recent year, numerous technological advancements have
+been witnessed one of which is big data technologies. The
+features of big data technologies assist in determining various
+factors which are unexplored in the datasets. Big data can
+readily handle a massive volume of data at high complexity
+and speed. Moreover, it helps in rendering data which demands
+much more enhanced methods for saving, processing and
+investigating the hidden knowledge present in the data. [1]
+This knowledge then can be reflected by making use of
+different graphs and facts which would help in understanding
+the insights of data in a more clear way.
+The project makes use of flight dataset of U.S airlines
+which is brought into attention. Data for flights are generated
+regularly in very extensive volume as there are many regular
+operating flights. This dataset holds different parameters related to flight details and delay information. Parameters such
+as date of flight, name of airlines, source as well as destination
+airports, the city as well as state names, the volume of flight
+handled, factors causing delays and many more. These insights
+would assist in discovering distinctive patterns from historical
+data.
+Employing these big data technologies it would become exceptional in discovering root causes of flight delays. Moreover,
+these historical fight data would serve in finding unusual delay
+trends in airlines which would show daily, weekly and monthly
+delay patterns. The conclusions obtained would also be helping
+to build important trends about most airlines and airports
+used as well as popular destinations among air passengers.
+These trends and drifts would benefit the aviation industry to
+provide useful analytics on passengers and the performance
+of airlines as well as airports. It would additionally help
+airport authorities to avoid large penalties and might increase
+customer satisfaction and trustworthiness.
+This report is further distributed into different sections
+where section 2 holds a literature review, whereas section 3
+introduces the methodology used in this project. Section 4
+addresses the use cases and result presented out of the data
+and finally, section 5 shows conclusions, limitations and future
+work.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Application :->
+==============
+
+• We can use big data to collect large set of informations and use it for data ware
+house purpose.
+• Using this technique we can predict the weather information of next 2,3 month
+in advance . Using this we can avoid the delays as well as cancellation of
+flight due to bad weather.
+• Big data can also use for data mining purpose.
+• By using big data we can analyse the large set of information.
+
+
+
+Predictive maintenance:->
+=========================
+
+Today’s next-generation of aircraft engines are equipped with multiple 
+sensors that generate massive amounts of data. As an example, an Airbus A350 aircraft has 6,000 
+sensors producing 2.5Tb of data per day. These sensors measure health and performance and provide 
+insights by tracking everything from fuel flow, pressure and temperature to the aircraft’s altitude, 
+speed, weather and air temperature. By combining this real-time information with historical data and 
+robust analytics, airlines can determine the condition of in-service equipment to make proactive decisions
+on maintenance schedules and ways to maximise aircraft availability. This result in greater efficiency in the
+maintenance, repair and overhaul process and enhanced fleet management. 
+Predictive maintenance not only enables airlines to keep earning revenue by preventing groundings and 
+disruptions but also helps improve safety by preventing equipment failure.
+ 
+
+
+
+OBJECTIVES:->
+============
+
+The methodology includes a detailed summary of data
+source, dataset, technologies utilized into scope and strategy
+used for carrying out the analysis.
+
+A. Data Source :- 
+
+The data utilized for this project is obtained from the Bureau
+of Transportation Statistics which is managed by the United
+States Department of Transportation.
+(i).Bureau of Transportation Statistics (BTS)
+https://www.transtats.bts.gov/Tables.asp?DB ID=120&
+DB Name=Airline%20On-Time%20Performance%
+20Data
+As a part of the Department of U.S Transportation, BTS
+stores maintains, analyzes and provide easily accessible information on the statistics of the transportation and logistics
+industry. As the data is maintained by the transportation
+department, this proves the genuineness of data and therefore
+it is been utilized for further process.
+The dataset acquired has many attributes which can be employed in the project for determining solutions to the problems
+faced by the aviation industry. There are countless flights that
+are handled regularly, this dataset includes those details which
+are more than 1.1 million data and 30 variables. This dataset
+comprises of latest records of daily flight details, which are
+further segregated into weekly and monthly data. Additionally,
+the dataset also contains flight details like airlines name,
+airport location, flight handled, distance travelled and factors
+causing a delay in aircraft. This dataset is publicly available in
+comma-separated values (CSV). As the information enclosed
+is in large volume, this dataset benefits in recognizing various
+hidden features for the aviation industry.
+
+B. Data Cleaning:-
+
+The dataset was prepared for each month in the commaseparated value (CSV). These monthly datasets were then
+merged together and stored. The datasets held few NA values
+which are handled and were eliminated. All task i.e. of
+merging and cleaning and storing of the dataset is performed
+by making use of MySQL queries.
+
+
+6.  SOFTWARE REQUIREMENT:->
+============================
+
+
+There are various frameworks of big data technologies and
+software’s used in this project implementation which are as
+follows.
+Input data files used for this project is ”airline dataset.csv”
+files. Database used for initial storing i.e Input Database was
+MySQL, whereas HBase was used for storing output files.
+Hadoop ecosystem was used for analyzing the hidden trends
+in the datasets where Hadoop Mapreduce, Hive and Pig were
+taken into account.
+1) Comma Separated value (C.S.V) data is obtained from
+datasource.
+2) These CSV are then loaded into Relational database
+(MySQL)
+3) Hive, Pig and MapReduce makes use of cleaned dataset
+as input which is loaded as Sqoop command.
+4) The result obtained from Pig and Hive are stored in
+HBase.
+5) Similarly, output of MapReduce, Hive and Pig are stored
+in HDFS Coludera in txt format
+6) Data Visualization are performed using output txt files.
+
+
+Process Flow:->
+===============
+
+1) Input File
+
+The dataset are captured from U.S aviation industry
+generates month wise data which is stored in the local
+system available in CSV format.
+
+2) MySQL
+
+CSV files are then loaded into the relational database i.e
+MySQL where first database and tables are created and
+then the data from CSV files are loaded and additionally
+cleaning of data is also performed in MySQL. Figure
+shows table creation in MySQL.Cleaning of the dataset is been performed in MySQL
+using different delete and alter commands where NA
+values are eliminated.
+
+3) Sqoop
+
+Data was loaded into Hive from MySQL database using
+Sqoop command.
+Similarly, data was also loaded from MySQL to Pig
+using Sqoop command.
+
+And also, these data was loaded into HDFS for performing MapReduce task using Sqoop command.
+
+4) Apache Hive
+
+A new table linked with HBase externally is used to
+store the outputs generated by Hive queries. The output
+of the data is stored in HBase using Insert command for
+HBase. There in total 3 different queries performed in
+Apache Hive for finding different patterns
+
+Once all the queries are executed, hive includes list of
+tables
+
+5) Apache Pig
+
+Sqoop command is used for loading the data into Pig,
+which acts as input data. This data is loaded using
+LOAD command on which 2 queries are been performed. The output of the files are stored in both HBase
+and HDFS
+
+6) MapReduce
+
+The jar files required for running MapReduce codes
+are created using Eclipse. 2 jar files are created using
+two different queries in MapReduce for which Top Ten
+airlines and Factors Causing details. The output of the
+MapReduce program is stored in HDFS.
+
+7) HBase
+
+HBase is used to store the results for the queries. 
+Initially, tables are created using Create command
+All the outputs of Pig and Hive are stored in different
+tables of HBase.
+
+8) HDFS
+
+HDFS has been used in the project for storing the results
+obtained by running Pig, Hive and MapReduce queries.
+The output is stored in .txt format.
+
+9) Data Visualization
+
+The txt files are used for creating different visualization
+using Tableau Desktop and Power BI tools.
+
+EXPECTED OUTCOMES:->
+===================
+
+BUSINESS CASE 1 - 
+Which airports are among the
+most used airports in United States ?
+Technology Used - Apache Hive.
+This business query shows density plot of airports which are
+mostly considered by air passenger’s to travel. For performing
+this task the data was first loaded into MySQL database.
+Moreover, the data is then stored into Hadoop Distributed
+File System (HDFS) and lastly by using Sqoop command the
+data tables are loaded into Apache Hive. This business query
+was finally performed by making use of Apache Hive and
+the output was stored in HBase by creating an external table.
+For obtaining this query result, source airports were grouped
+together to find total number of count of each airports
+
+The above graphs depicts some of the most utilized airports
+of United States considered for travelling. From the above
+map, it can be easily depicted that more air passengers opt
+to travel usually from Atlanta Airport followed by O’Hare
+International Airport whereas Seattle and Salt Lake City
+International where least chosen for travelling. This query
+would help the airport authorities in handling large number
+of flight and increase airport capacity for travelling passenger
+
+BUSINESS CASE 2 - 
+Which destinations are popular
+among the air passengers for travelling?
+Technology Used - Apache Pig.
+This query was performed by making use of Apache
+Pig where the input data is obtained from HDFS and is
+further imported into Pig through the help of Apache Sqoop.
+The above bar graph labelled as Popular Destination show
+trending visuals out the data. For obtaining the resultant bar
+graph pig query was used, were columns holding destination
+city name were first grouped together and count of the
+grouped data was obtained. Further, limit clause was applied
+to obtain 10 popular destinations city where passengers
+traveller from U.S. Airports. The graph provides a clear idea
+on displaying most popular destinations to where Atlanta
+leads the table followed by Chicago. Denver was considered
+as least opted destination for travelling purposes. This query
+may be helpful not only for the aviation industry in terms of
+increasing number of flight but also would be beneficial for
+tourism and hospitality industry.
+
+BUSINESS CASE 3 - 
+Which top ten airlines does
+passengers prefer for travelling?
+Technology Used - Hadoop Mapreduce.
+For the evaluation of 3rd query MapReduce Java Program
+was taken into consideration where the dataset from HDFS
+is utilized. The main goal is to obtain the top ten airlines
+favored for travelling.
+Mapper - Over here, airlines name was taken as input to the
+mapper which is obtained from MySQL table. A condition was
+applied for the mapper that was [month of year.equals(”1”)]
+Reducer - The code for reducer contains count of the column
+as well as filtration which was (top.size() ¿ 10) where only
+results of top ten airlines were fetched.
+The output obtained depicts the top ten airlines of United
+States which are in mostly preferred by the passengers for
+travelling purposes. In this graph, Southwest Airlines (WN)
+clearly wins the title for most busiest airlines whereas Alaska
+airlines is at the bottom in the list of top ten airlines of United
+States. This information would be useful for airlines industry
+increasing the number of flights for fulfilling customer
+demands. Also, other airlines company can understand their
+competitors strategy.
+
+BUSINESS CASE 4 - 
+Airports facing maximum arrival and departure delay ?
+Technology Used - Apache Hive
+This case was used to determine the changing patterns
+in the delay faced by airports including both arrival as well
+as departure delays. The output for this query is obtained by
+using queries supporting in Apache Hive. This query was
+obtained using average value of arrival and departure delays
+and are grouped with their airport names. Delays having
+positive and above zero level values are considered
+
+The results present in the visualization clearly describes
+the delay patterns of different airports. The airports facing
+maximum arrival delay is Minneapolis Airport and departure
+delay are mostly faced by Chattanooga Airport. Whereas,
+it can be easily concluded that Washington airport suffers
+majorly by both arrival as well as departure delays. This study
+would help the airport authorities in order to minimize these
+delays as delays creates negative impact both on business and
+customers. Also, many other losses like operational cost, fuel
+cost and compensation cost can be minimized if delays are
+avoided.
+
+BUSINESS CASE 5 - 
+Which factors causes major delays
+for January month?
+Technology Used - Hadoop Mapreduce
+The evaluation of 5th query was done using MapReduce Java
+Program and in the similar manner dataset from HDFS was
+utilized. 4 different types of delays which affect the
+Mapper - Over here, 4 different types of delay which effects
+aircraft’s performance were obtained. A word-count program
+was written for the column of MySQL database labelled as
+cancellation-code for the input.
+Reducer - The columns contained 4 different alphabets
+resembling different types of delay caused in air-crafts. The
+reducer code displays the word count values for each distinct
+alphabet present in the particular column.
+
+The donut graph was created using Power BI tool which
+depicts different types of delay faced by aviation industry.
+It can be easily understood that most delays are caused due
+to bad weather which contributes about 67.5 percent of the
+delays. Carrier delay and National Aviation System delay
+contributes nearly same amount of delay. The least affecting
+cause of delay is security delay this can be further reduced
+by engaging more staffs. This results would be very much
+important for aviation industry to minimize or eliminate
+delays and reduce operating cost.
+
+BUSINESS CASE 6 - 
+Which day of the January Month have
+seen the most and least number of cancellation due to bad
+weather ?
+Technology Used - Apache Hive.
+This use case discusses about which day faces most
+weather based delays. This use case shows line graph of
+airports which are mostly considered by air passenger’s to
+travel. For performing this task the data was first loaded into
+MySQL database. The data is then stored into (HDFS) and
+finally Sqoop command was used to load data into Apache
+Hive. The query result was obtained using WHERE clause
+on ”cancellation code” column and the results were group
+accordingly with the ”day of month” column
+
+This business case was motivated from above results where
+aircraft’s are mainly affected due to bad weather was most
+prominent. This query shows which days of the month has
+been greatly affected due to bad weathers. The above graphs
+helps in understanding days which are badly impacted due
+to weather where 30th day of January shows most delay.
+Furthermore, 25th day January has minimum effect of bad
+weather.
+
+BUSINESS CASE 7 - 
+What amount of flights are diverted
+in the month of January ?
+Technology Used - Apache Pig.
+This business query was implemented using Apache
+Pig and input data was utilized from HDFS. The query
+talks about number of diversions took place in the month
+of January. For this first filter was applied on ”diverted”
+columns conceiving value 1 and count was obtained for the
+same. Then the data was grouped together with source and
+destination airport names. Finally the result was ordered
+accordingly.
+This query was is next level of consideration for previous
+query i.e. query 6. As query 6 showed number of cancellations
+due to bad weather, this query helps to understand the results
+of number of diversions that took place. From the above
+graph route of ”Friedman Memorial Airport - SUN” and
+”Salt Lake International Airport - SLC” showed larger number
+of diversion. On similar trends, routes from ”Aspen/Pitkin
+County Airport - ASE” to ”George Bush Intercontinental
+Airport - IAH” had least number of diversions in flights.
+
+
+CONCLUSION:->
+============
+
+Flight delays is considered as one of the prime drawback
+for aviation industry. Delays has also increased these days
+becoming one of the serious problems. To minimize the effects
+of delay on aviation industry, a crucial understanding of the
+patterns is much needed. These hidden patterns are identified
+in this project by using big data analytic. Large volume
+of dataset obtained from U.S. aviation industry are been
+analyzed using big data technologies. This project involves
+the use of different big-data technologies such as MySQL,
+Hadoop Mapreduce, Sqoop,Hive, Pig and Hbase. Utilizing
+these technologies would support in developing insights and
+generating useful information and patterns out of the data.
+These technologies have proved to be fruitful in determining the solutions to the problems face by the airports and
+airlines. Results shows that effect of bad weather has major
+impact on flight delays. The historical data of U.S. aviation
+industry which are differentiated into days and weeks also
+helps in understanding valuable information related to delays.
+These insights would be very helpful to aviation industry for
+minimizing delays and take necessary decisions to eliminated
+delays. Machine learning techniques can be implemented on
+these dataset for forecasting delays.
+
+
+
+REFERENCES:->
+============
+
+[1] R. Akerkar, “Analytics on big aviation data: Turning data into insights,”
+IJCSA, vol. 11, pp. 116–127, 2014.
+[2] T. Larsen, “Cross-platform aviation analytics using big-data methods,”
+2013 Integrated Communications, Navigation and Surveillance
+Conference (ICNS), pp. 1–9, April 2013. [Online]. Available:
+https://ieeexplore.ieee.org/document/6548579
+[3] R. Akerkar, “Analytics on big aviation data: Turning data into insights,”
+IJCSA, vol. 11, pp. 116–127, 2014.
+[4] M. Sornam, M. Meharunnisa, and P. Nagendren, “Big data analytics
+on aviation data for the prediction of airline trends in seasonal
+delay,” International Journal of Advanced Research in Computer
+Science, vol. 8, no. 5, pp. 2248–2251, 2017. [Online]. Available:
+http://www.ijarcs.info/index.php/Ijarcs/article/view/3738
+[5] R. Vane, “Flight delay analysis and possible enhancements with big
+data,” International Research Journal of Engineering and Technology
+(IRJET), vol. 3, no. 6, 2016. [Online]. Available: https://www.irjet.net/
+archives/V3/i6/IRJET-V3I6144.pdf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DISCUSSIONS, CONCLUSIONS AND FUTURE RESEARCH DIRECTIONS:->
+========================================================
+

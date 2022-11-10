@@ -1,0 +1,43 @@
+export JAVA_HOME=/home/cloudera/Downloads/jdk1.8.0_271
+export PATH=$JAVA_HOME/bin:$PATH
+
+
+spark-submit --class Filter_Orders --master yarn --executor-memory 1G --num-executors 1 Airflow_bundel_Sub5.jar /user/cloudera/raj/orders.csv
+
+spark-submit --class Filter_Orders --master yarn --executor-memory 1G --num-executors 1 Airflow_bundel_Sub6.jar /user/cloudera/raj/orders.csv
+
+spark-submit --class Filter_Orders --master yarn --executor-memory 1G --num-executors 1 Airflow_bundel_Sub7.jar /user/cloudera/raj/orders.csv
+
+ spark-submit --class Filtering_order_Submit_Job --master yarn --executor-memory 1G --num-executors 1 Airflow_bundel_Sub7.jar /user/cloudera/raj/orders.csv
+
+ spark-submit --class Filtering_order_Submit_Job --master yarn --executor-memory 1G --num-executors 1 Airflow_bundel_Sub8.jar /user/cloudera/raj/orders.csv /user/cloudera/
+
+ spark2-submit --class Filtering_order_Submit_Job --master yarn --executor-memory 1G --num-executors 1 Airflow_bundel_Sub8.jar /user/cloudera/raj/orders.csv /user/cloudera/
+
+spark-submit --class Filter_Orders --master yarn --executor-memory 1G --num-executors 1 Airflow_bundel_Sub9.jar /user/cloudera/raj/orders.csv /user/cloudera/
+
+ spark-submit --class Filter_Orders --master yarn --executor-memory 1G --num-executors 1 Airflow_bundel_Sub9.jar /user/cloudera/raj/orders.csv
+
+ spark-submit --class Filter_Orders --master yarn --executor-memory 1G --num-executors 1 Airflow_bundel_Sub9.jar /user/cloudera/raj/orders.csv /
+
+spark-submit --class Filter_Orders --master yarn --executor-memory 1G --num-executors 1 Airflow_bundel_Sub9.jar /user/cloudera/raj/orders.csv /Output_filter
+
+
+ spark-submit --class Filter_S3_Orders --master yarn --executor-memory 1G --num-executors 1 Airflow_bundel_Sub10.jar /user/cloudera/raj/orders.csv  /user/cloudera/
+
+spark-submit --class Filter_S3_Orders --master yarn --executor-memory 1G --num-executors 1 Airflow_bundel_Sub10.jar /user/cloudera/raj/orders.csv  Output_filter
+
+
+ spark-submit --class Filter_S3_Orders --master yarn --executor-memory 1G --num-executors 1 Airflow_bundel_Sub11.jar /user/cloudera/raj/orders.csv  /user/cloudera/data
+
+spark-submit --class Filter_S3_Orders --master yarn --executor-memory 1G --num-executors 1 Airflow_bundel_Sub11.jar /user/cloudera/raj/orders.csv  /Output_filter
+
+ spark-submit --class Filter_S3_Orders --master yarn --executor-memory 1G --num-executors 1 Airflow_bundel_Sub11.jar /user/cloudera/raj/orders.csv  Output_filter
+
+spark-submit --class Filter_S3_Orders --master yarn --executor-memory 1G --num-executors 1 Airflow_bundel_Sub12.jar /user/cloudera/raj/orders.csv  /user/cloudera/data
+
+ spark-submit --class Filter_S3_Orders --master yarn --executor-memory 1G --num-executors 1 Airflow_bundel_Sub12.jar /user/cloudera/raj/orders.csv  Output_filter
+
+ spark-submit --class Filter_S3_Orders --master yarn --executor-memory 1G --num-executors 1 Airflow_bundel_Sub13.jar /user/cloudera/raj/orders.csv  Output_filter
+
+

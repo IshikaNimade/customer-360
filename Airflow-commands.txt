@@ -1,0 +1,25 @@
+[1]. sudo yum install centos-release-scl
+
+[2]. sudo yum install rh-python36
+
+[4]. scl enable rh-python36 bash
+
+[5]. mkdir airflow
+
+cd airflow
+
+[6]. python -m venv venv
+
+[7]. source venv/bin/activate
+
+[8]. pip install apache-airflow
+
+airflow
+
+[9]. airflow initdb
+
+========xx========
+
+airflow webserver-p 8080
+
+airflow schedular
